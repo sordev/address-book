@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from "mobx-react-lite"
+import {Provider} from "mobx-react"
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { RootStore } from "./Stores/RootStore";
+import {RootStore} from "./Stores/RootStore";
 
 ReactDOM.render(
-  <Provider store={RootStore}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Provider>,
+  <React.StrictMode>
+    <Provider store={RootStore}>
+      <App/>
+    </Provider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

@@ -1,26 +1,60 @@
+$fontSizeSmall: 10px;
+$fontSize: 12px;
+$fontSizeLarge: 28px;
+$padding: 8px;
+
 .Container {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
+
   .Sidebar {
     background-color: #fff;
     min-height: 100vh;
     width: 200px;
   }
+
   .Content {
     background-color: #eee;
     flex-grow: 1;
+    padding: $padding;
   }
 }
-.title {
-  font-size: 28px;
+
+.button {
+  border: 1px solid #ccc;
+  border-radius: 32px;
+  padding: 6px;
+  min-width: 32px;
+  height: 32px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+
+  }
 }
+
+
+.text {
+  font-size: $fontSize;
+  &-large {
+    font-size: $fontSizeLarge;
+  }
+}
+
+.title {
+  font-size: $fontSizeLarge;
+}
+
 .padding {
   padding: 8px;
-  &left{
+
+  &left {
     padding-left: 8px;
   }
 }
+
 .App {
   text-align: center;
 }
